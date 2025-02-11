@@ -11,7 +11,7 @@
 
     --logo: 400 2.5rem var(--font-leckerli);
     --heading-md: 700 1.75rem var(--font-baloo);
-    --heading-sm: 700 1.125rem var(--font-baloo);
+    --heading-sm: 700 1.125rem/1.25% var(--font-baloo);
     --text-md: 400 1rem var(--font-open);
     --text-sm: 400 0.875rem var(--font-open);
     --text-xs: 400 0.75rem var(--font-open);
@@ -43,3 +43,11 @@
 
 
 }
+
+body {
+    background-color: var(--shape-background);
+    color: var(--text-body);
+    font: var(--text-md);
+    overflow: hidden;
+}
+
