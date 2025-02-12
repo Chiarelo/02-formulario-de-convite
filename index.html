@@ -1,33 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de convite</title>
-    
-    <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/Logo.svg" type="image/x-icon">
-</head>
-<body>
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/Logo.svg" type="image/x-icon" />
+  </head>
+  <body>
     <div id="page">
+      <aside>
+        <div class="aside-container">
+          <img src="assets/Logo.svg" alt="logo da festivite" />
+          <h2>Festivite</h2>
+          <p>Crie um convite digital para o seu evento</p>
+        </div>
+      </aside>
 
-        <aside>
-            <div class="aside-container">
-                <img src="assets/Logo.svg" alt="logo da festivite">
-                <h2>Festivite</h2>
-                <p>Crie um convite digital para o seu evento</p>
-            </div>
-        </aside>
+      <main>
+        <div class="main-container">
+          <h1>Crie seu convite</h1>
 
-        <main>
-            <div class="main-container">
-                <h1>Crie seu convite</h1>
-            </div>
-        </main>
+          <form action="">
+            <fieldset id="about-event">
+                <header>
+                    <img src="assets/icons/calendar.svg" alt="ícone de calendário">
+                    <legend>Sobre o evento</legend>
+                </header>
 
+                <div class="input-wrapper">
+                  <label for="title">Título</label>
+                  <input type="text" name="title" id="title" placeholder="Nome do evento">
+                </div>
+
+                <div class="flex">
+                  <div class="input-wrapper">
+                    <label for="begin">Início</label>
+                    <input type="datetime-local" name="begin" id="begin">
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="end">Fim</label>
+                    <input type="datetime-local" name="end" id="end">
+                  </div>
+                </div>
+
+                <div class="flex">
+                  <div class="input-wrapper">
+                    <label for="type">Tipo</label>
+                    <div class="radio-wrapper">
+                      <div class="radio-box">
+                        <input type="radio" name="type" id="in-person">
+                        <span></span>
+                        <label for="in-person">Presencial</label>
+                      </div>
+
+                      <div class="radio-box">
+                        <input type="radio" name="type" id="online">
+                        <span></span>
+                        <label for="online">Online</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="addres">Local</label>
+                    <input type="text" placeholder="Link ou endereço" name="addres" id="addres">
+                  </div>
+                </div>
+
+                <div class="textarea-wrapper">
+                  <label for="description">Descrição</label>
+                  <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
