@@ -1,0 +1,16 @@
+input, select, textarea {
+    height: 3rem;
+    width: 100%;
+    padding: 1rem 0.8125rem;
+    background-color: var(--input-base);
+    border: 2px solid transparent;
+    outline: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    font: var(--text-md);
+    color: var(--input-placeholder);
+}
+
+textarea {
+    height: 8.5rem;
+    padding: 1rem;
+}

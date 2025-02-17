@@ -1,61 +1,60 @@
 #page {
-    display: grid;
-    grid-template-columns: 31.25% 1fr;
-    gap: 1.75rem;
+  display: grid;
+  grid-template-columns: 31.25% 1fr;
+  gap: 1.75rem;
 
-    height: 100vh;
+  height: 100vh;
 }
 
 aside {
-    padding: 1.25rem 0 1.25rem 0;
-    border-radius: .75rem;
-    overflow: hidden;
+  padding: 1.25rem 0 1.25rem 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
 
-    & .aside-container {
-        max-width: 25rem;
-        margin-left: auto;
-        background: url(../assets/Background.png);
-        height: 46.875rem;
-        width: 100%;
-        object-fit: cover;
-        background-repeat: no-repeat;
-        border-radius: .75rem;
-        padding: 2rem;
+  & .aside-container {
+    max-width: 25rem;
+    margin-left: auto;
+    background: url(../assets/Background.png);
+    height: 46.875rem;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.75rem;
+    padding: 2rem;
 
-        img {
-            width: 2,8425rem;
-            height: 3rem;
-            object-fit: cover;
-        }
-
-        h2 {
-            font: var(--logo);
-            color: var(--pink);
-        }
-
-        p {
-            font-weight: 100;
-            color: var(--text-heading);
-        }
+    img {
+      width: 2, 8425rem;
+      height: 3rem;
+      object-fit: cover;
     }
+
+    h2 {
+      font: var(--logo);
+      color: var(--pink);
+    }
+
+    p {
+      font-weight: 100;
+      color: var(--text-heading);
+    }
+  }
 }
 
 main {
-    margin: 0.75rem;
-    margin-left: 0;
-    
-    & .main-container {
-        background-color: var(--shape-body);
-        border-radius: .75rem;
-        width: 51.25rem;
-        margin-right: auto;
-        padding: 5rem 8.125rem 5rem 8.125rem;
-        
-        overflow: auto;
+  margin: 0.75rem;
+  margin-left: 0;
+  overflow: auto;
 
-        h1 {
-            font: var(--heading-md);
-            color: var(--text-heading);
-        }
+  & .main-container {
+    background-color: var(--shape-body);
+    border-radius: 0.75rem;
+    width: 51.25rem;
+    margin-right: auto;
+    padding: 5rem 8.125rem 5rem 8.125rem;
+
+    h1 {
+      font: var(--heading-md);
+      color: var(--text-heading);
     }
+  }
 }

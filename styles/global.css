@@ -54,3 +54,24 @@ body {
 form {
     display: grid;
 }
+
+legend {
+    font: 700 1.125rem/20% var(--font-baloo);
+    color: var(--text-heading);
+}
+
+label {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex {
+    flex: 2;
+}
