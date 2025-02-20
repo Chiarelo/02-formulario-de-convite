@@ -48,7 +48,7 @@ main {
   & .main-container {
     background-color: var(--shape-body);
     border-radius: 0.75rem;
-    width: 51.25rem;
+    width: 51.25rem; 
     margin-right: auto;
     padding: 5rem 8.125rem 5rem 8.125rem;
 
