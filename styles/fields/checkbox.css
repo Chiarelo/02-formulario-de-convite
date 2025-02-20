@@ -1,0 +1,67 @@
+.checkbox-inner {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding-block: .5rem;
+
+  .toggle-button {
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 999px;
+    position: relative;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: .25rem;
+      transition: transform 0.4s ease-in-out, fill 0.3s ease;
+    }
+
+    & input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    &:has(input:focus-within), &:has(input:hover) {
+      border: 1px solid var(--input-placeholder);
+    }
+
+    &:has(input:checked) {
+      background-color: var(--brand-light);
+      transition: background-color 0.3s ease-in-out;
+
+      & svg {
+        transform: translate(2rem, -50%);
+        transition: transform 0.5s ease;
+        & circle {
+          fill: #F9F9F9;
+          transition: fill 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  & label::after {
+    content: 'Escuro';
+  }
+
+  
+  & label {
+    margin: 0 !important;
+    
+  }
+
+  
+}
+
+.checkbox-inner:has(input:checked) label::after {
+  content: 'Claro';
+}

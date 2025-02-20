@@ -24,4 +24,8 @@ fieldset {
   }
 }
 
+#customization {
+  display: grid;
+  gap: 1.75rem;
+}
 

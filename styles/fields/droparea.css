@@ -1,0 +1,58 @@
+.dropzone {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  & .button {
+    display: flex;
+    gap: 0.5rem;
+
+    padding: 0.75rem;
+    background-color: var(--shape-button);
+    border-radius: 0.5rem;
+    position: relative;
+
+    & input {
+      opacity: 0;
+      position: absolute;
+      inset: 0;
+      pointer-events: auto;
+    }
+
+    &:hover, &:focus {
+      outline: 1px solid var(--input-stroke);
+    }
+  }
+
+  & label {
+    margin: 0 !important;
+  }
+
+  & .info-label::after {
+    content: "Nenhum arquivo selecionado";
+    color: var(--input-placeholder);
+  }
+
+  /* & .button:has(input:) .info-label::after {
+    content: "image.png";
+    background-color: var(--text-body);
+  } */
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--danger);
+
+  font: var(--text-xs);
+  & svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+&:not(:focus):valid + .error {
+  display: none;
+}
