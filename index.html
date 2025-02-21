@@ -321,7 +321,10 @@
                   required
                 />
                 <div class="error">
-                  <img src="assets/icons/circle-alert.svg" alt="ícone de erro">
+                  <img
+                    src="assets/icons/circle-alert.svg"
+                    alt="ícone de erro"
+                  />
                   <small>Campo obrigatório</small>
                 </div>
               </div>
@@ -347,10 +350,35 @@
                   />
                 </div>
               </div>
-
-              
             </fieldset>
-            <button>oi</button>
+
+            <fieldset id="footer">
+              <div class="border-line"></div>
+
+              <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="terms" id="terms" />
+
+                <label for="terms"
+                  >Li e concordo com os <span>Termos e Condições</span> e com a
+                  <span>Política de Privacidade</span></label
+                >
+              </div>
+
+              <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="att-email" id="att-email" />
+
+                <label for="att-email">Aceito receber atualizações e promoções por e-mail</label>
+              </div>
+              
+              <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="att-sms" id="att-sms" />
+
+                <label for="att-sms">Aceito receber atualizações e promoções por SMS</label>
+              </div>
+            </fieldset>
           </form>
         </div>
       </main>
