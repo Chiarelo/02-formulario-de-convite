@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Logo" src="">
+  <img alt="Logo" src="https://github.com/Chiarelo/02-formulario-de-convite/blob/8367bb25bec92fda2654f6e5d189d54c700c3ca7/favicom.png">
 </h1>
 
 <p align="center">
