@@ -64,11 +64,10 @@
 
 
 
-#footer {
-  .border-line {
-    border: 1px solid var(--input-stroke);
-    margin-block: 3rem 2.5rem;
-  }
+.items {
+  display: grid;
+  gap: .5rem;
+  
   .terms-wrapper {
     display: flex;
     gap: 0.75rem;
