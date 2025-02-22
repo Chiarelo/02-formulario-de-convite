@@ -3,7 +3,7 @@ fieldset {
   display: grid;
   gap: 1rem;
 
-  & header {
+  header {
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -18,14 +18,9 @@ fieldset {
   label {
     margin-bottom: 0.75rem;
   }
-
-  .flex {
-    gap: 1rem;
-  }
 }
 
 #customization {
   display: grid;
   gap: 1.75rem;
 }
-

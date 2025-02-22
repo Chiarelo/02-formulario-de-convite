@@ -30,7 +30,6 @@
     --navy: #6A59FF;
     --danger: #FF5959;
 
-    /* input */
     --input-base: #1C1F21;
     --input-stroke: #363B40;
     --input-placeholder: #869198;
@@ -40,8 +39,6 @@
     --shape-hover: #383D42;
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9; 
-
-
 }
 
 body {
@@ -66,17 +63,14 @@ label {
 
 .flex {
     display: flex;
+    gap: 1rem;
 }
 
 .flex-1 {
     flex: 1;
 }
 
-.flex-2 {
-    flex: 2;
-}
-
 .border-line {
     border: 1px solid var(--input-stroke);
     margin-block: 3rem 2.5rem;
-  }
+}

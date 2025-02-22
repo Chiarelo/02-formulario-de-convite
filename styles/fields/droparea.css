@@ -20,6 +20,7 @@
     }
 
     &:hover, &:focus {
+      border: 1px solid var(--brand-light);
       outline: 1px solid var(--input-stroke);
     }
   }
@@ -33,10 +34,6 @@
     color: var(--input-placeholder);
   }
 
-  /* & .button:has(input:) .info-label::after {
-    content: "image.png";
-    background-color: var(--text-body);
-  } */
 }
 
 

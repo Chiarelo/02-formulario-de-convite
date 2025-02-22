@@ -13,7 +13,7 @@
     position: relative;
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
-    & svg {
+    svg {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -21,7 +21,7 @@
       transition: transform 0.4s ease-in-out, fill 0.3s ease;
     }
 
-    & input {
+    input {
       all: unset;
       position: absolute;
       inset: 0;
@@ -36,38 +36,29 @@
 
     &:has(input:checked) {
       background-color: var(--brand-light);
-      transition: background-color 0.3s ease-in-out;
 
-      & svg {
+      svg {
         transform: translate(2rem, -50%);
-        transition: transform 0.5s ease;
-        & circle {
+        circle {
           fill: #f9f9f9;
-          transition: fill 0.3s ease-in-out;
         }
       }
     }
   }
 
-  & label::after {
+  label::after {
     content: "Escuro";
   }
 
-  & label {
-    margin: 0 !important;
+  &:has(input:checked) label::after {
+    content: "Claro";
   }
 }
-
-.checkbox-inner:has(input:checked) label::after {
-  content: "Claro";
-}
-
-
 
 .items {
   display: grid;
   gap: .5rem;
-  
+
   .terms-wrapper {
     display: flex;
     gap: 0.75rem;
@@ -77,10 +68,12 @@
   .checkbox-wrapper {
     position: relative;
 
-    & [type="checkbox"] {
+    [type="checkbox"] {
       all: unset;
       position: absolute;
       inset: 0;
+
+  
     }
 
     .checkbox-image {
@@ -93,11 +86,11 @@
       background-image: url(../../assets/icons/checkbox-marked.svg);
     }
 
-    & label {
-      margin: 0 !important;
+    label {
+      margin: 0;
       font: var(--text-sm);
 
-      & span {
+      span {
         font-weight: 600;
         text-decoration: underline;
         color: var(--brand-light);
