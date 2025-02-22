@@ -1,6 +1,10 @@
 <h1 align="center">
-  <img alt="Logo" src="https://github.com/Chiarelo/02-formulario-de-convite/blob/8367bb25bec92fda2654f6e5d189d54c700c3ca7/favicom.png">
+  <img src="https://github.com/user-attachments/assets/95cefa06-d844-4c28-ab42-a9d4d887f56d" alt="Logo" width="200">
+
 </h1>
+
+
+
 
 <p align="center">
     Desafio proposto pela Rocketseat nas aulas de Formulários - Formação Fullstack.
