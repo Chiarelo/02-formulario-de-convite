@@ -29,10 +29,10 @@
 
 <p align="center">💻 <b>Para PC:</b></p>
 <p align="center">
-  <img alt="Projeto-img1" src="">
-  <img alt="Projeto-img2" src="">
-  <img alt="Projeto-img3" src="">
-  <img alt="Projeto-img4" src="">
+  <img alt="Projeto-img1" src="https://github.com/user-attachments/assets/5e8afc4e-ee78-4f44-8bfe-f028d3192864">
+  <img alt="Projeto-img2" src="https://github.com/user-attachments/assets/c457cdd8-cb37-4cbb-b0d6-a6425f147d4d">
+  <img alt="Projeto-img3" src="https://github.com/user-attachments/assets/dbe50981-0750-4e26-a9d4-600b2219b0e6">
+  
 </p>
 
 <!--
